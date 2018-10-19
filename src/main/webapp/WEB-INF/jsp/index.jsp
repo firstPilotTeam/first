@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -52,7 +52,7 @@
       <ul class="app-menu">
         <li><a class="app-menu__item " href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">学生信息</span></a></li>
         <li ><a class="app-menu__item" href="clazz" ><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">班级信息</span></a></li>
-        <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">教师信息</span></a></li>
+        <li><a class="app-menu__item" href="/teacher/T_table_teacher"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">教师信息</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
@@ -71,19 +71,19 @@
           <div class="tile">
             <div class="tile-body" style="text-align: center;margin-top: 5%;margin-bottom: 5%">
               <%--这里插入bootstrap table--%>
-              <img src="photo/0.jpg" width="70%" height="70%" >
+              <img src="${pageContext.request.contextPath}/photo/0.jpg" width="70%" height="70%" >
             </div>
           </div>
         </div>
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
+    <script src="../../js/plugins/pace.min.js"></script>
     <%--导航栏隐藏属性,要保留--%>
     <!-- Google analytics script-->
     <script type="text/javascript">

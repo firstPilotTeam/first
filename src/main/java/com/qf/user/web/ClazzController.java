@@ -18,7 +18,7 @@ public class ClazzController {
     @Autowired
     private ClazzService ser;
 
-    @RequestMapping(value = "/",method = RequestMethod.GET)
+    @RequestMapping(value = "do/",method = RequestMethod.GET)
     public String index(){
         return "index";
     }

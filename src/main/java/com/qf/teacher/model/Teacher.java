@@ -1,15 +1,26 @@
-package com.qf.user.model;
+package com.qf.teacher.model;
 
-import java.sql.Date;
 
+/**
+ * Created by 初秋 on 2018/10/17.
+ */
 public class Teacher {
 
-    private String tremark;
-    private String tname;
-    private Integer tage;
-    private Date ttime;
-    private String tsubjects;
-    private Integer tid;
+    /**
+     *
+     t_namevarchar(20) NULL老师姓名
+     t_ageint(10) NULL老师年龄
+     t_timetime NULL老师入职时间
+     t_subjectsvarchar(20) NULL老师执教科目
+     t_idint(5) NOT NULL老师编号
+     t_remark(200)NULL 备注
+     * */
+    private  String tremark;
+    private  String tname;
+    private  Integer tage;
+    private  String  ttime;
+    private  String  tsubjects;
+    private  Integer tid;
 
     public String getTremark() {
         return tremark;
@@ -35,11 +46,11 @@ public class Teacher {
         this.tage = tage;
     }
 
-    public Date getTtime() {
+    public String getTtime() {
         return ttime;
     }
 
-    public void setTtime(Date ttime) {
+    public void setTtime(String  ttime) {
         this.ttime = ttime;
     }
 

@@ -15,8 +15,8 @@
 
         <property name="driverClassName" value="${jdbc.driver}"/>
         <property name="url" value="jdbc:mysql://10.31.158.18:3306/stu_manage"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
         <property name="defaultAutoCommit" value="false"/>
     </bean>
 
@@ -26,7 +26,7 @@
         <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
         <property name="mapperLocations" >
             <list>
-                <value>com/qf/user/dao/*.xml</value>
+                <value>com/qf/*/dao/*.xml</value>
             </list>
 
         </property>
@@ -36,7 +36,7 @@
 
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
 
-        <property name="basePackage" value="com.qf.user.dao"/>
+        <property name="basePackage" value="com.qf.*.dao"/>
     </bean>
 
 
