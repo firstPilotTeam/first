@@ -36,7 +36,7 @@
 
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
 
-        <property name="basePackage" value="com.qf.u>ser.dao"/>
+        <property name="basePackage" value="com.qf.user.dao"/>
     </bean>
 
 

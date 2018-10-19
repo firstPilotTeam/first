@@ -14,7 +14,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd
 ">
 
-    <context:component-scan base-package="com.qf.*.web"/>
+    <context:component-scan base-package="com.qf.user.web"/>
     <mvc:annotation-driven/>
 
     <bean id="multipartResolver"
